@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="36dp"
+        android:text="Generate History"
+        app:layout_constraintBottom_toTopOf="@+id/txtInfor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="118dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="41dp"
+        android:text="clear"
+        app:layout_constraintBottom_toTopOf="@+id/txtInfor"
+        app:layout_constraintStart_toEndOf="@+id/btnCalculate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="67dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="58dp"
+        android:text="enter age"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtResults"
+        android:layout_width="212dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="age:"
+        app:layout_constraintBottom_toTopOf="@+id/btnClear"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtInfor"
+        android:layout_width="206dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="408dp"
+        android:layout_height="423dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/history_image_7" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="183dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculate"
+        app:srcCompat="@drawable/history_image_5" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="192dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtInfor"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/history_image_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
